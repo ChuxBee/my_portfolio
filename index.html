@@ -1,105 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rebuild</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" type="image/gif" href="./assets/others/favicon.gif">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Rebuild</title>
+  <link rel="icon" type="image/gif" href="./assets/others/favicon.gif">
+
+	<!-- /* CSS Stylesheet Links */ -->
+
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="icon" type="image/gif" href="./assets/others/favicon.gif"> -->
+  <link rel="shortcut icon" href="./assets/others/image_1.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
-
-<h1>My Portfolio</h1>
-</header>
-<nav id="menu">
-  <ul>
-    <li>
-      <a>About Me</a>
-    </li>
-    <li>
-      <a>Work</a>
-    </li>
-    <li>
-      <a>Contact Me</a>
-    </li>
-    <li>
-      <a>Skills</a>
-    </li>
-    <li>
-      <a>Resume</a>
-    </li>
-  </ul>
-</nav>
-
 <body>
+	<!-- /* Navbar Section Starts */ -->
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light py-0">
+    <div class="container">
+      <a class="navbar-brand text-white font-weight-bold" href="">My Portfolio</a>
+      <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white" style="filter: contrast(0%);"></span>
+      </button>
     
-    <img src="./assets/others/ntv pic.jpg">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li onclick="HideburgerMenu()" class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li onclick="HideburgerMenu()" class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li onclick="HideburgerMenu()" class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+        </li>
+        <li onclick="HideburgerMenu()" class="nav-item">
+          <a class="nav-link" href="#certifications">Certifications</a>
+        </li>
+          <li onclick="HideburgerMenu()" class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li onclick="HideburgerMenu()" class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li onclick="HideburgerMenu()" class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 
 
-    <div id="primary-content-wrap" class="wrap clearfix">
-        <div class="primary-content">
-          <h2>About Me</h2>
-          <p> My name is Chukwuka Nkadi, I'm a Web Developer specialised in Html, Css & Javascript. 
-            In a constantly evolving world we find ousrselves, it is a necessity to keep upskilling and 
-            positioning for lurking opportunities. The acquisition of customised Websites is a pre-requisite
-            for modern businesses to thrive, especially in a highly competitive digital environment, regardless
-            if the transactions occur physically or remotely.</p>
-            
-          <p>I'm currently a practicing Business Analyst, who employs data analytic skills in assisting 
-            businesses to make data-driven-decisions. My recent experiences are geared towards pivotting 
-            fully into Info-Tech, having spent a significant period of time in the Banking and Financial 
-            industry as a Liquidity Management Officer and a Financial Advisor in Treasury and 
-            Investment Banking Departments respectively.</p>
-        
-        </p>
-    
-        </div>
+	<!-- /* Hero Home Section Starts */ -->
+
+  <section id="home" class="pt-5 d-flex justify-content-center align-items-center hero_section" style="background-color: #022d41;">
+    <div class="container hero py-5 d-flex justify-content-center align-items-center flex-column">
+      <div class="mx-auto mb-4" style="width: fit-content;">
+        <img src="./assets/others/ntv_pic cropped.jpg" alt="">
+      </div>
+      <h1 class="mb-0 text-center text-white font-weight-bold">Welcome to My Portfolio</h1>
       
-        <div class="sidebar">
-          <div class="floating-div">
-            <p>Resume:</p>
-            <li>Diverse Tech Talent Programme in partnership with Skillhat, WIL, Atila & Ripen(2024)</li>
-            <li>Sales & Customer Experience - Dreamswork Africa(2023)</li>
-            <li>Data Analytics & Business Intelligence - Dataleum(2022)</li>
-           
+    </div>
+  </section>
 
 
+	<!-- /* About Section Starts */ -->
+
+  <section id="about" class="py-5" style="background-color: rgba(2,45,65, 0.9); min-height: 100vh;">
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 px-0 mx-0">
+          <div class="mx-auto about_img">
+            <img src="./assets/others/car jacket pic.jpg" alt="" class="img-fluid img-responsive">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="primary-content mt-5 mt-md-0">
+            <h2 class="mb-4 font-weight-bold">About Me</h2>
+            <p> My name is Chukwuka Nkadi, I'm a Web Developer specialised in Html, Css & Javascript.
+              In a constantly evolving world we find ousrselves, it is a necessity to keep upskilling and
+              positioning for lurking opportunities. The acquisition of customised Websites is a pre-requisite
+              for modern businesses to thrive, especially in a highly competitive digital environment, regardless
+              the location of the transactions whether occuring physically or remotely.</p>
+      
+            <p>I currently work as a Business Analyst, who employs data analytical skills in assisting
+              businesses to make data-driven-decisions. My recent training and certifications are geared towards a
+              full integration to mainstream Information Technology, having spent a significant period of time in 
+              the Banking and Financial Industry as a Liquidity Management Officer and a Financial Advisor in the 
+              Treasury and Investment Banking Departments respectively.</p>
+      
+            </p>
+      
           </div>
         </div>
       </div>
+
+    </div>
+  </section>
+
+
+	<!-- /* Resume Section Starts */ -->
+
+  <section id="resume" class="resume_content_wrap d-flex justify-content-center align-items-center py-5">
+    <div class="py-5 container">
+      <div class="floating_div">
+        <h2 class="text-center text-white font-weight-bold">Resume</h2>
+        <ul class="pl-4 pl-md-0 pt-5">
+          <li>Senior Business Analyst - DB4S Consulting Inc. (2021 - Current)</li>
+          <li>Business Analyst - Ecobank Limited (2014 - 2020)</li>
+          <li>Assets & Liquidity Management Officer - Ecobank Limited (2011 - 2013)</li>
+          <li>Mutual Funds/Portfolio Management - Oceanic Capital Company Limited (2008 - 2010)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- /* Certification Section Starts */ -->
+
+  <section id="certifications" class="certifications_content_wrap d-flex justify-content-center align-items-center py-5">
+    <div class="py-5 container">
+      <div class="floating_div">
+        <h2 class="text-center text-white font-weight-bold">Certifications</h2>
+        <ul class="pl-4 pl-md-0 pt-5">
+          <li>Diverse Tech Talent Programme in partnership with Skillhat, WIL, Atila & Ripen (2024)</li>
+          <li>Sales & Customer Experience - Dreamswork Africa (2023)</li>
+          <li>Data Analytics & Business Intelligence - Dataleum (2022)</li>
+          <li>E-Payment Operational Risk Management - NIBSS (2016)</li>
+          <li>Corporate Treasury Management - FITC (2014)</li>
+          <li>Financial Markets Empowerment - Treasury Pro Academy/FDHL (2012)</li>
+          <li>Project Management Extra-Value Certified Professional(ECP) - Harvard Associates (2009)</li>
+          <li>Basic Accounting Principle - IBFC Agusto (2007)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+	<!-- /* Skills Section Starts */ -->
+
+  <section id="skills" class="skills_content_wrap d-flex justify-content-center align-items-center py-5">
+    <div class="py-5 container">
+      <div class="floating_div">
+        <h2 class="mb-5 text-white text-center font-weight-bold">Skills</h2>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-6 col-md-4 my-3">
+            <div class="skill_titles text-center text-white font-weight-normal">
+              Web Development
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 my-3">
+            <div class="skill_titles text-center text-white font-weight-normal">
+              Data Analytics
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 my-3">
+            <div class="skill_titles text-center text-white font-weight-normal">
+              Customer Experience
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 my-3">
+            <div class="skill_titles text-center text-white font-weight-normal">
+              Liquidity Management
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 my-3">
+            <div class="skill_titles text-center text-white font-weight-normal">
+              Financial Advisory
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+	<!-- /* Work Section Starts */ -->
+
+  <section id="work" class="work_content_wrap d-flex justify-content-center align-items-center py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="text-center text-white font-weight-bold mb-4">Work</h2>
+        <p class="text-center text-white">Business Analyst at DB4S Consulting Inc.</p>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 px-0 mx-0">
+          <div class="work_imgs">
+            <img src="./assets/others/image_1.jpg" alt="" class="img-fluid img-responsive">
+          </div>
+        </div>
+        <div class="col-md-4 px-0 mx-0">
+          <div class="work_imgs">
+            <img src="./assets/others/work02.jpeg" alt="" class="img-fluid img-responsive">
+          </div>
+        </div>
+        <div class="col-md-4 px-0 mx-0">
+          <div class="work_imgs">
+            <img src="./assets/others/work03.jpeg" alt="" class="img-fluid img-responsive">
+          </div>
+        </div>
+        <div class="col-md-12 px-0 mx-0">
+          <div class="mx-auto d-flex justify-content-center align-items-center w-100 work_imgs_full">
+            <img src="./assets/others/work04.jpeg" alt="" class="w-100 img-fluid img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+	<!-- /* Contact Section Starts */ -->
+
+  <section id="contact" class="work_content_wrap d-flex justify-content-center align-items-center py-5">
+    <div class="container my-5">
+      <h2 class="text-center text-white font-weight-bold mb-5">Contact Me</h2>
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+
+          <h4 class="text-white text-left mb-4">You can contact me via: </h4>
+          <p class="text-white text-left">Tel: <a href="tel:+234 803 571 4342">+234 803 571 4342</a></p>
+          <p class="text-white text-left">
+            Email: <a href="mailto:chux@skilledweb.com">chux@skilledweb.com</a>
+          </p>
+          <p class="text-white text-left">Social Handles: <a href="">Github</a>, <a href="">Twitter</a>, <a href="">Instagram</a></p>
     
-      <div class="sidebar">
-        <div class="floating-div">
-          <p>Work</p>
-          <P>Business Analyst at Quartech Infotech & Services</P>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-us-box mt-5 mt-md-0">
 
+						<form>
+							<div class="user-box">
+								<input type="text" name="" required="">
+								<label>Your Name</label>
+							</div>
+							<div class="user-box">
+								<input type="email" name="" required="">
+								<label>Your Email</label>
+							</div>
+							<div class="user-box">
+								<input type="text" name="" required="">
+								<label>Subject</label>
+							</div>
+							<div class="user-box">
+								<textarea name="" id="" cols="30" rows="4" required=""></textarea>
+								<label>Message</label>
+							</div>
+							<button type="submit">
+								SEND
+							</button>
+						</form>
+					</div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="sidebar">
-        <div class="floating-div">
-          <p>Contact Me: Tel:123456789, email:chux@skilledweb.com</p>
-          <p>Github,Twitter,Instagram</p>
+	<!-- /* Footer Copyright Section */ -->
+  <div class="row py-4" style="background-color: rgba(2,45,65, 0.9);">
+    <div class="col-md-12 text-center">
 
-        </div>
-      </div>
+      <p class="mb-0 text-white font-italic px-5" style="font-weight: lighter !important;">
+        Copyright MyPortfolio &copy;
+        <script>document.write(new Date().getFullYear());</script> | All Rights Reserved
     </div>
-
-    <div class="sidebar">
-        <div class="floating-div">
-          <p>Skills: Web Development, Data Analytics, Customer Experience, Liquidity Management & 
-            Financial Advisory</p>
-          
-
-        </div>
-      </div>
-    </div>
+  </div>
 
 
+	<!-- /* J.S Links used for Bootstrap */ -->
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
 </body>
 
 
+	<!-- /* J.S Local File */ -->
+
+  <script src="./js/script.js"></script>
 </html>
