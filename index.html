@@ -235,29 +235,34 @@
         </div>
         <div class="col-md-6">
           <div class="contact-us-box mt-5 mt-md-0">
-
-							<div class="user-box">
-								<input type="text" name="" required="">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="apikey" value="2ab05569-721c-4a7b-9ef2-4311ec195fad">
+              <div class="user-box">
+								<input type="text" id="from" name="from" required="">
 								<label>Your Name</label>
 							</div>
 							<div class="user-box">
-								<input type="email" name="" required="">
+								<input type="email" id="email" name="email" required="">
 								<label>Your Email</label>
 							</div>
 							<div class="user-box">
-								<input type="text" name="" required="">
+								<input type="text" id="subject" name="subject" required="">
 								<label>Subject</label>
 							</div>
               <div class="user-box">
-								<input type="text" name="" required="">
+            
+								<!-- <input type="text" name="" required=""> -->
+
+                <textarea rows="4" id="message" name="message" required=""></textarea><br><br>
 								<label>Message</label>
-                <textarea id="message" name="message"></textarea><br><br>
+                
 							</div>
-              <form>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="apikey" value="2ab05569-721c-4a7b-9ef2-4311ec195fad">
+  
                 <button type="submit">Send</button>
-              </form> 
+
+</form>
+
+            
 					</div>
         </div>
       </div>
