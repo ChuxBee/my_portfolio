@@ -133,7 +133,7 @@
 						<div class="col-md-12 heading-section portfolio-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>My name is Chukwuka Nkadi, I'm a Frontend Developer specialised in Html, Css, 
+							<p>My name is Chukwuka Nkadi, I'm a Frontend Developer specialised in HTML, CSS, 
 								Javascript, Bootstrap, and other modern JavaScript frameworks like React.js 
 								and Angular. In a constantly evolving world we find ousrselves, it is a 
 								necessity to keep upskilling and positioning for lurking opportunities.</p>
@@ -608,27 +608,30 @@
 				<div class="col-md-6 order-md-last d-flex">
 					<div class="contact-us-box">
 
-						<form>
-							<div class="user-box">
-								<input type="text" name="" required="">
-								<label>Your Name</label>
+						<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="apikey" value="2ab05569-721c-4a7b-9ef2-4311ec195fad">
+              <div class="user-box">
+								<input type="text" id="from" name="from" required="">
+								<label>NAME</label>
 							</div>
 							<div class="user-box">
-								<input type="email" name="" required="">
-								<label>Your Email</label>
+								<input type="email" id="email" name="email" required="">
+								<label>EMAIL</label>
 							</div>
 							<div class="user-box">
-								<input type="text" name="" required="">
-								<label>Subject</label>
+								<input type="text" id="subject" name="subject" required="">
+								<label>SUBJECT</label>
 							</div>
-							<div class="user-box">
-								<textarea name="" id="" cols="30" rows="4" required=""></textarea>
-								<label>Message</label>
+              <div class="user-box">
+            
+								<!-- <input type="text" name="" required=""> -->
+
+                <textarea rows="4" id="message" name="message" required=""></textarea><br><br>
+								<label>MESSAGE</label>
+                
 							</div>
-							<a href="">
-								SEND
-								<span></span>
-							</a>
+							<a href=""><button type="submit">SEND</button><span></span></a>
+
 						</form>
 					</div>
 				</div>
