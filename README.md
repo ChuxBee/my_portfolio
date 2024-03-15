@@ -26,14 +26,14 @@ Here are some of the key projects featured on my portfolio:
 
 ## Coding Quiz App
 
-Description: The Coding Quiz App is a fun and interactive way to test one's knowledge of programming concepts and syntax. With a time limit for each question and a failure buzz-sound for incorrect answers, it challenges users to think quickly and accurately. Built with HTML, CSS, and JavaScript, the app features multiple-choice questions covering various topics in programming.
+Description: The Coding Quiz App is a fun and interactive way to test one's knowledge of programming concepts and syntax. With a time limit for each question and a failure buzz-sound for incorrect answers, it challenges users to think quickly and accurately. Built with HTML, CSS and JavaScript, the app features multiple-choice questions covering various topics in programming.
 
 Demo: https://chuxbee.github.io/My_Quiz_App/
 Code: https://github.com/ChuxBee/My_Quiz_App
 
 ## DTTPHackathon-Chef65
 
-Description: I was in Team 65 of the DTTP Hackathon March 2024, so we decided to name our project after the name of the Team - Chef65. We built a recipe generator that makes cooking easy and fun and provides a variety of recipes. We employed the use of HTML,CSS & JavaScript and a free, fast, and reliable CDN for react-toastify which enables the app to fetch various recipes each time you input your food class and click on the Generate My Recipe tab. This was done by registering an API key with toastify, which enables the codes to work smoothly. I collaborated with a fellow Frontend developer and two UX/UI Designers.
+Description: I was on Team 65 of the DTTP Hackathon March 2024, so we decided to name our project after the name of the Team - Chef65. We built a recipe generator that makes cooking easy and fun and provides a variety of recipes. We employed the use of HTML,CSS & JavaScript and a free, fast, and reliable CDN for react-toastify which enables the app to fetch various recipes each time you input your food class and click on the Generate My Recipe tab. This was done by registering an API key with toastify, which enables the codes to work smoothly. I collaborated with a fellow Frontend developer and two UX/UI Designers.
 
 Demo: https://chuxbee.github.io/DTTPHackathon-Chef65/
 Code: https://github.com/ChuxBee/DTTPHackathon-Chef65/settings/pages
