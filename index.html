@@ -2,299 +2,694 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Rebuild</title>
-  <link rel="icon" type="image/gif" href="./assets/others/favicon.gif">
+	<title>MyPortfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 	<!-- /* CSS Stylesheet Links */ -->
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="shortcut icon" href="./images/portfolio-logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link href="css/lightbox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="icon" type="image/gif" href="./assets/others/favicon.gif"> -->
-  <link rel="shortcut icon" href="./assets/others/image_1.jpg" type="image/x-icon">
-  <!-- link to Bootstrap deployed -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
 	<!-- /* Navbar Section Starts */ -->
+	<nav class="navbar navbar-expand-lg navbar-dark portfolio_navbar portfolio-navbar-light site-navbar-target"
+		id="portfolio-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">My<span>Portfolio</span>.</a>
+			<button class="navbar-toggler portfolio-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#portfolio-nav" aria-controls="portfolio-nav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span>
+			</button>
 
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light py-0">
-    <div class="container">
-      <a class="navbar-brand text-white font-weight-bold" href="">My Portfolio</a>
-      <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white" style="filter: contrast(0%);"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li onclick="HideburgerMenu()" class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li onclick="HideburgerMenu()" class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li onclick="HideburgerMenu()" class="nav-item">
-            <a class="nav-link" href="#resume">Resume</a>
-          </li>
-        </li>
-        <li onclick="HideburgerMenu()" class="nav-item">
-          <a class="nav-link" href="#certifications">Certifications</a>
-        </li>
-          <li onclick="HideburgerMenu()" class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li onclick="HideburgerMenu()" class="nav-item">
-            <a class="nav-link" href="#work">Work</a>
-          </li>
-          <li onclick="HideburgerMenu()" class="nav-item">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
+			<div class="collapse navbar-collapse" id="portfolio-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#home-section"
+							class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#about-section"
+							class="nav-link"><span>About</span></a></li>
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#resume-section"
+							class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#services-section"
+							class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#skills-section"
+							class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#projects-section"
+							class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item" onclick="HideburgerMenu()"><a href="#contact-section"
+							class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- /* Navbar Section Ends */ -->
 
 
 	<!-- /* Hero Home Section Starts */ -->
+	<section id="home-section" class="hero">
+		<a href="#about-section" class="scroll_to_about">
+			<span></span>
+		</a>
+		<div class="home-slider owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/wedn.png) ;;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center portfolio-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">Meet <span>Chux Blueson</span></h1>
+								<!-- <h2 class="mb-4">I'm a Front-End Developer</h2> -->
+								<p class="herobtn_holder"><a href=""
+										class="btn btn-primary py-3 px-4">>>></a>
+									<a href=""
+										class="btn btn-white btn-outline-white py-3 px-4">#</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-  <section id="home" class="pt-5 d-flex justify-content-center align-items-center hero_section" style="background-color: #022d41;">
-    <div class="container hero py-5 d-flex justify-content-center align-items-center flex-column">
-      <div class="mx-auto mb-4" style="width: fit-content;">
-        <img src="./assets/others/ntv_pic cropped.jpg" alt="">
-      </div>
-      <h1 class="mb-0 text-center text-white font-weight-bold">Welcome to My Portfolio</h1>
-      
-    </div>
-  </section>
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/dark\ circular.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex align-items-center portfolio-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<!-- <span class="subheading">Hello!</span> -->
+								<h1 class="mb-4 mt-3">I'm a <span>Frontend Developer</span></h1>
+								<p><a href="" class="btn btn-primary py-3 px-4">#</a>
+									<a href=""
+										class="btn btn-white btn-outline-white py-3 px-4">>>></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Hero Home Section Ends */ -->
 
 
 	<!-- /* About Section Starts */ -->
+	<section class="portfolio-about img portfolio-section portfolio-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/borders1.png);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section portfolio-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>My name is Chukwuka Nkadi, I'm a Frontend Developer specialised in Html, Css, 
+								Javascript, Bootstrap, and other modern JavaScript frameworks like React.js 
+								and Angular. In a constantly evolving world we find ousrselves, it is a 
+								necessity to keep upskilling and positioning for lurking opportunities.</p>
+							<p>The acquisition of customised Websites is a pre-requisite for modern businesses 
+								to thrive, especially in a highly competitive digital space, regardless the 
+								location of the transactions, whether occuring physically or remotely</p>				
 
-  <section id="about" class="py-5" style="background-color: rgba(2,45,65, 0.9); min-height: 100vh;">
-    <div class="container py-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 px-0 mx-0">
-          <div class="mx-auto about_img">
-            <img src="./assets/others/car jacket pic.jpg" alt="" class="img-fluid img-responsive">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="primary-content mt-5 mt-md-0">
-            <h2 class="mb-4 font-weight-bold">About Me</h2>
-            <p> My name is Chukwuka Nkadi, I'm a Web Developer specialised in Html, Css & Javascript.
-              In a constantly evolving world we find ousrselves, it is a necessity to keep upskilling and
-              positioning for lurking opportunities. The acquisition of customised Websites is a pre-requisite
-              for modern businesses to thrive, especially in a highly competitive digital environment, 
-              regardless the location of the transactions whether occuring physically or remotely.</p>
-      
-            <p>I currently work as a Business Analyst, who employs data analytical skills in assisting
-              businesses to make data-driven-decisions. My recent training and certifications are geared 
-              towards full integration to mainstream Information-Technology, having spent a significant period 
-              of time in the Banking and Financial Industry as a Liquidity Management Officer and a Financial 
-              Advisor in the Treasury and Investment Banking Departments respectively.</p>
-            </p>
-      
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+						</div>
+					</div>
+					<div class="counter-wrap portfolio-animate d-flex mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number" data-number="9">0</span>
+								<span>Projects completed</span>
+							</p>
+							<p><a href="" class="btn btn-primary py-3 px-3">Projects Count</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* About Section Ends */ -->
 
 
 	<!-- /* Resume Section Starts */ -->
+	<section class="portfolio-section portfolio-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center portfolio-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<!-- <p class="sized-p">My portfolio aims to provide an overview of my working experience in this role,
+						highlighting the below listed Degrees.</p> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap portfolio-animate">
+						<span class="date">2024</span>
+						<h2>Web Development</h2>
+						<span class="position">DTTP</span>
+						<p class="mt-4">Diverse Tech Talent Programme in partnership with Skillhat, WIL,
+							Atila, Co.Lab & Riipen (2024 - Current).</p>
+					</div>
+					<div class="resume-wrap portfolio-animate">
+						<span class="date">2023</span>
+						<h2>Sales & Customer Experience</h2>
+						<span class="position">Dreamswork Africa</span>
+						<!-- <p class="mt-4">.</p> -->
+					</div>
+					<div class="resume-wrap portfolio-animate">
+						<span class="date">2019</span>
+						<h2>Professional Conduct & Ethics</h2>
+						<span class="position">CIBN</span>
+						<!-- <p class="mt-4">.</p> -->
+					</div>
+				</div>
 
-  <section id="resume" class="resume_content_wrap d-flex justify-content-center align-items-center py-5">
-    <div class="py-5 container">
-      <div class="floating_div">
-        <h2 class="text-center text-white font-weight-bold">Resume</h2>
-        <ul class="pl-4 pl-md-0 pt-5">
-          <li>Senior Business Analyst - DB4S Consulting Inc. (2021 - Current)</li>
-          <li>Business Analyst - Ecobank Limited (2014 - 2020)</li>
-          <li>Assets & Liquidity Management Officer - Ecobank Limited (2011 - 2013)</li>
-          <li>Mutual Funds/Portfolio Management Officer - Oceanic Capital Company Limited (2008 - 2010)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+				<div class="col-md-6">
+					<div class="resume-wrap portfolio-animate">
+						<span class="date">2023</span>
+						<h2>Data Analytics</h2>
+						<span class="position">Coursera Certificates</span>
+						<p class="mt-4">Foundations: Data, Data, Everywhere</p>
+					</div>
+					<div class="resume-wrap portfolio-animate">
+						<span class="date">2022</span>
+						<h2>Introduction To Data Analytics & Business Intelligence</h2>
+						<span class="position">Dataleum</span>
+						<!-- <p class="mt-4">.</p> -->
+					</div>
+					<div class="resume-wrap portfolio-animate">
+						<span class="date">2014</span>
+						<h2>Corporate Treasury Management</h2>
+						<span class="position">FDHL</span>
+						<!-- <p class="mt-4">.</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center my-5">
+				<div class="col-md-6 text-center portfolio-animate">
+					<p><a href="" class="btn btn-primary py-4 px-5">Back to the top</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Resume Section Ends */ -->
 
-  <!-- /* Certification Section Starts */ -->
 
-  <section id="certifications" class="certifications_content_wrap d-flex justify-content-center align-items-center py-5">
-    <div class="py-5 container">
-      <div class="floating_div">
-        <h2 class="text-center text-white font-weight-bold">Certifications</h2>
-        <ul class="pl-4 pl-md-0 pt-5">
-          <li>Diverse Tech Talent Programme (DTTP) in partnership with Skillhat, WIL, 
-              Atila & Ripen (2024 - Current)</li>
-          <li>Foundations: Data, Data, Everywhere - Coursera Course Certificates (2023)</li>
-          <li>Sales & Customer Experience - Dreamswork Africa (2023)</li>
-          <li>Data Analytics & Business Intelligence - Dataleum (2022)</li>
-          <li>Professional Conduct & Ethics - CIBN (2019)</li>
-          <li>E-Payment Operational Risk Management - NIBSS (2016)</li>
-          <li>Corporate Treasury Management - FITC (2014)</li>
-          <li>Financial Markets Empowerment - Treasury Pro Academy/FDHL (2012)</li>
-          <li>Project Management Extra-Value Certified Professional (ECP) - Harvard Associates (2009)</li>
-          <li>Basic Accounting Principle - IBFC Agusto (2007)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+	<!-- /* Services Section Starts */ -->
+	<section class="portfolio-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5">
+				<div class="col-md-12 heading-section text-center portfolio-animate">
+					<h1 class="big big-2">Services</h1>
+					<h2 class="mb-4">Services</h2>
+					<p class="sized-p">From conceptualization to deployment, I'm dedicated to delivering robust web
+						solutions that not only meets the technical requirements, but also prioritizes a seamless user
+						experience.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center d-flex portfolio-animate">
+					<a href="" class="services-1">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Web Design</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex portfolio-animate">
+					<a href="" class="services-1">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Data Analytics</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex portfolio-animate">
+					<a href="" class="services-1">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Customer Experience</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 text-center d-flex portfolio-animate">
+					<a href="" class="services-1">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Liquidity Management</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex portfolio-animate">
+					<a href="" class="services-1">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Sales</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex portfolio-animate">
+					<a href="" class="services-1">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Financial Advisory</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Services Section Ends */ -->
+
 
 	<!-- /* Skills Section Starts */ -->
+	<section class="portfolio-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center portfolio-animate">
+					<h1 class="big big-2">Skills</h1>
+					<h2 class="mb-4">My Skills</h2>
+					<p class="sized-p">My hands-on experience ranges from creating elegant user interfaces and designing
+						user-centric experiences to developing scalable and efficient Websites and WebApp solutions.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap portfolio-animate">
+						<h3>HTML</h3>
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap portfolio-animate">
+						<h3>CSS</h3>
+						<div class="progress">
+							<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="width:85%">
+								<span>85%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap portfolio-animate">
+						<h3>JavaScript</h3>
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100" style="width:95%">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap portfolio-animate">
+						<h3>jQuery</h3>
+						<div class="progress">
+							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap portfolio-animate">
+						<h3>Bootstrap</h3>
+						<div class="progress">
+							<div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap portfolio-animate">
+						<h3>React.js</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Skills Section Ends */ -->
 
-  <section id="skills" class="skills_content_wrap d-flex justify-content-center align-items-center py-5">
-    <div class="py-5 container">
-      <div class="floating_div">
-        <h2 class="mb-5 text-white text-center font-weight-bold">Skills</h2>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-sm-6 col-md-4 my-3">
-            <div class="skill_titles text-center text-white font-weight-normal">
-              Web Development
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 my-3">
-            <div class="skill_titles text-center text-white font-weight-normal">
-              Data Analytics
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 my-3">
-            <div class="skill_titles text-center text-white font-weight-normal">
-              Customer Experience
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 my-3">
-            <div class="skill_titles text-center text-white font-weight-normal">
-              Liquidity Management
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 my-3">
-            <div class="skill_titles text-center text-white font-weight-normal">
-              Financial Advisory
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+	<!-- /* Projects Section Starts */ -->
+	<section class="portfolio-section portfolio-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center portfolio-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<!-- <p class="sized-p">Far far away, behind the word mountains, far from the countries Vokalia and
+						Consonantia</p> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="project img portfolio-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-4.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="">My Coding Quiz App</a></h3>
+							<span>Web Design</span>
+						</div>
+						<div class="portfolio-btn">
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1 px-3"
+								href="images/project-4.jpg" data-lightbox="portfolio">
+								<span class="icon-eye"></span>
+							</a>
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+								href="https://chuxbee.github.io/My_Quiz_App/" target="_blank"><span
+									class="icon-link"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="project img portfolio-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-5.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="">My DTTP-Hackathon Recipe Generator</a></h3>
+							<span>Web Design</span>
+						</div>
+						<div class="portfolio-btn">
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1 px-3"
+								href="images/project-5.jpg" data-lightbox="portfolio">
+								<span class="icon-eye"></span>
+							</a>
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+								href="https://chuxbee.github.io/DTTPHackathon-Chef65/" target="_blank"><span
+									class="icon-link"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="project img portfolio-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-1.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="">Taskboard App</a></h3>
+							<span>Web Design</span>
+						</div>
+						<div class="portfolio-btn">
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1 px-3"
+								href="images/project-1.jpg" data-lightbox="portfolio">
+								<span class="icon-eye"></span>
+							</a>
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+								href="https://chuxbee.github.io/Taskboard_App_Repo/" target="_blank"><span
+									class="icon-link"></span></a>
+						</div>
+					</div>
+
+					<div class="project img portfolio-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-6.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="">Password Generator</a></h3>
+							<span>Web Design</span>
+						</div>
+						<div class="portfolio-btn">
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1 px-3"
+								href="images/project-6.jpg" data-lightbox="portfolio">
+								<span class="icon-eye"></span>
+							</a>
+							<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+								href="https://chuxbee.github.io/js_password_generator/" target="_blank"><span
+									class="icon-link"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project img portfolio-animate d-flex justify-content-center align-items-center"
+								style="background-image: url(images/project-2.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3><a href="">My First Website</a></h3>
+									<span>Web Design</span>
+								</div>
+								<div class="portfolio-btn">
+									<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1 px-3"
+										href="images/project-2.jpg" data-lightbox="portfolio">
+										<span class="icon-eye"></span>
+									</a>
+									<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+										href="https://chuxbee.github.io/my_first_repository/" target="_blank"><span
+											class="icon-link"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="project img portfolio-animate d-flex justify-content-center align-items-center"
+								style="background-image: url(images/project-3.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3><a href="">My Biopage</a></h3>
+									<span>Web Design</span>
+								</div>
+								<div class="portfolio-btn">
+									<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1 px-3"
+										href="images/project-3.jpg" data-lightbox="portfolio">
+										<span class="icon-eye"></span>
+									</a>
+									<a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+										href="https://chuxbee.github.io/html_biopage_repository/" target="_blank"><span
+											class="icon-link"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Projects Section Ends */ -->
 
 
-	<!-- /* Work Section Starts */ -->
+	<!-- /* Achievements Card Section Starts */ -->
+	<section class="portfolio-section portfolio-no-pt portfolio-no-pb portfolio-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap portfolio-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="100">0</strong>
+							<span>Awards</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap portfolio-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="9">0</strong>
+							<span>Completed Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap portfolio-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="1173">0</strong>
+							<span>Happy Customers</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap portfolio-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="500">0</strong>
+							<span>Coffee Chats</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Achievements Card Section Ends */ -->
 
-  <section id="work" class="work_content_wrap d-flex justify-content-center align-items-center py-5">
-    <div class="container py-5">
-      <div class="text-center mb-5">
-        <h2 class="text-center text-white font-weight-bold mb-4">Work</h2>
-        <p class="text-center text-white">Business Analyst at DB4S Consulting Inc.</p>
-      </div>
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-4 px-0 mx-0">
-          <div class="work_imgs">
-            <img src="./assets/others/image_1.jpg" alt="" class="img-fluid img-responsive">
-          </div>
-        </div>
-        <div class="col-md-4 px-0 mx-0">
-          <div class="work_imgs">
-            <img src="./assets/others/work02.jpeg" alt="" class="img-fluid img-responsive">
-          </div>
-        </div>
-        <div class="col-md-4 px-0 mx-0">
-          <div class="work_imgs">
-            <img src="./assets/others/work03.jpeg" alt="" class="img-fluid img-responsive">
-          </div>
-        </div>
-        <div class="col-md-12 px-0 mx-0">
-          <div class="mx-auto d-flex justify-content-center align-items-center w-100 work_imgs_full">
-            <img src="./assets/others/work04.jpeg" alt="" class="w-100 img-fluid img-responsive">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
+
+	<!-- /* Hire Me Section Starts */ -->
+	<section class="portfolio-section portfolio-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 portfolio-animate text-center">
+					<h2>I<span>mpossible</span> is nothing!!!</h2>
+					<p>The word itslef says I'm possible!</p>
+					<p class="mb-0"><a href="" class="btn btn-primary py-3 px-5">Back to the top</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Hire Me Section Ends */ -->
+
 
 	<!-- /* Contact Section Starts */ -->
+	<section class="portfolio-section contact-section portfolio-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center portfolio-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
+					<div class="portfolio-footer-widget mb-4">
+						<!-- <h2 class="portfolio-heading-2">MyPortfolio.</h2>
+						<p>Proficient in a variety of programming languages and frameworks, I approach app development
+							with a focus on scalability, efficiency, and a user-first mindset.</p> -->
+						<ul class="portfolio-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="portfolio-animate"><a href="https://twitter.com/ChuxB"><span class="icon-twitter"></span></a></li>
+							<li class="portfolio-animate"><a href="https://www.linkedin.com/in/chukwuka-nkadi-a88432159"><span class="icon-linkedin"></span></a></li>
+							<li class="portfolio-animate"><a href="https://www.instagram.com/chuxb/"><span class="icon-instagram"></span></a></li>
+							<li class="portfolio-animate"><a href="https://github.com/ChuxBee"><span class="icon-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-  <section id="contact" class="work_content_wrap d-flex justify-content-center align-items-center py-5">
-    <div class="container my-5">
-      <h2 class="text-center text-white font-weight-bold mb-5">Contact Me</h2>
 
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
+			<div class="row no-gutters block-9">
+				<div class="col-md-6 order-md-last d-flex">
+					<div class="contact-us-box">
 
-          <h4 class="text-white text-left mb-4">Links to My Social Handles:</h4>
-          <p class="text-white text-left">Linkedin: <a href="https://www.linkedin.com/in/chukwuka-nkadi-a88432159">
-          click here</a></p>
-          <p class="text-white text-left">Twitter: <a href="https://twitter.com/ChuxB">click here</a></p>
-          <p class="text-white text-left">Instagram: <a href="https://www.instagram.com/chuxb/">click here</a></p>
-          <p class="text-white text-left">Github: <a href="https://github.com/ChuxBee">click here</a></p>
-
-        </div>
-        <div class="col-md-6">
-          <div class="contact-us-box mt-5 mt-md-0">
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="apikey" value="2ab05569-721c-4a7b-9ef2-4311ec195fad">
-              <div class="user-box">
-								<input type="text" id="from" name="from" required="">
+						<form>
+							<div class="user-box">
+								<input type="text" name="" required="">
 								<label>Your Name</label>
 							</div>
 							<div class="user-box">
-								<input type="email" id="email" name="email" required="">
+								<input type="email" name="" required="">
 								<label>Your Email</label>
 							</div>
 							<div class="user-box">
-								<input type="text" id="subject" name="subject" required="">
+								<input type="text" name="" required="">
 								<label>Subject</label>
 							</div>
-              <div class="user-box">
-            
-								<!-- <input type="text" name="" required=""> -->
-
-                <textarea rows="4" id="message" name="message" required=""></textarea><br><br>
+							<div class="user-box">
+								<textarea name="" id="" cols="30" rows="4" required=""></textarea>
 								<label>Message</label>
-                
 							</div>
-  
-                <button type="submit">Send</button>
-
-</form>
-
-            
+							<a href="">
+								SEND
+								<span></span>
+							</a>
+						</form>
 					</div>
-        </div>
-      </div>
-    </div>
-  </section>
+				</div>
 
-	<!-- /* Footer Copyright Section */ -->
-  <div class="row py-4" style="background-color: rgba(2,45,65, 0.9);">
-    <div class="col-md-12 text-center">
-
-      <p class="mb-0 text-white font-italic px-5" style="font-weight: lighter !important;">
-        Copyright MyPortfolio &copy;
-        <script>document.write(new Date().getFullYear());</script> | All Rights Reserved
-    </div>
-  </div>
+				<div class="col-md-6 d-flex">
+					<div class="img" style="background-image: url(images/Beachyy.jpg);"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /* Contact Section Ends */ -->
 
 
-	<!-- /* J.S Links used for Bootstrap */ -->
+	<!-- /* Contact Section Starts */ -->
+	<footer class="portfolio-footer portfolio-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"></script>
+				</div>
+
+
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						 &copy;
+						 
+						<script>document.write(new Date().getFullYear());</script> | github.com/MyPortolio | All Rights Reserved
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /* Contact Section Ends */ -->
+
+
+
+	<!-- /* Preloader Code */ -->
+	<div id="portfolio-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<!-- /* J.S Bundles */ -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+
+	<script src="js/main.js"></script>
+
 </body>
 
-
-	<!-- /* J.S Local File */ -->
-
-  <script src="./js/script.js"></script>
 </html>
