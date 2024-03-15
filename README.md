@@ -26,7 +26,8 @@ Here are some of the key projects featured on my portfolio:
 
 ## Coding Quiz App
 
-Description: Brief description of the project, its purpose, and the technologies used.
+Description: The Coding Quiz App is a fun and interactive way to test one's knowledge of programming concepts and syntax. With a time limit for each question and a failure buzz-sound for incorrect answers, it challenges users to think quickly and accurately. Built with HTML, CSS, and JavaScript, the app features multiple-choice questions covering various topics in programming.
+
 Demo: https://chuxbee.github.io/My_Quiz_App/
 Code: https://github.com/ChuxBee/My_Quiz_App
 
