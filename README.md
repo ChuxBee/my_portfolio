@@ -1,6 +1,6 @@
-# My Portfolio Website
+# My Portfolio
 
-This is my personal Portfolio, a showcase of my projects, skills, and experiences.
+This is my Portfolio, a website showcasing my projects, skills, and experiences.
 
 ## Table of Contents
 
